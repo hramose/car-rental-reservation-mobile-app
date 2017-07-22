@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title text-center>
+      Car Rental Reservation 
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <h2 text-center></h2>
+ <div *ngIf="cars">
+  <ion-list *ngFor="let car of cars">
+    <ion-item (click)="clickCars(car)">
+      <ion-icon name="ios-car-outline" item-start></ion-icon>
+      {{car.category_name}}
+
+      <ion-badge color="secondary" item-end>{{car.number_car}}</ion-badge>
+    </ion-item>
+  </ion-list>
+ </div>
+</ion-content>

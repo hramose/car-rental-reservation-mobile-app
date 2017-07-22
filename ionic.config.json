@@ -1,0 +1,11 @@
+{
+  "name": "reservation",
+  "app_id": "",
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://localhost/reservation/public/api/"
+    }
+  ]
+}
